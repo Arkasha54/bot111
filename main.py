@@ -14,6 +14,8 @@ def echo(update, conext):
         txt = "хочу и смотрю!!!"
     if txt.lower() in ['ты кому', 'ты кому?']:
         txt = "тебе!!!"
+    if txt.lower() in ['сосешь', 'сосёшь']:
+        txt = ")))"
     update.message.reply_text(txt)
 
 def start(update, conext):
