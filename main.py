@@ -4,6 +4,7 @@ from telegram.ext import CommandHandler
 TOKEN = "5495345535:AAE6uAEJoYJbYFOOLi4LgYvmERjubhwxlEA"
 def echo(update, conext):
     txt = update.message.text
+
     n = txt
     if txt.lower() in ['коооляяя', 'коля']:
         txt = "фто???)))"
@@ -19,6 +20,7 @@ def echo(update, conext):
         txt = ")))"
     if txt == n:
         txt = "хммм"
+    print(txt)
     update.message.reply_text(txt)
 
 def start(update, conext):
