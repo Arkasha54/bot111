@@ -10,6 +10,10 @@ def echo(update, conext):
         txt = "да"
     if txt.lower() in ['с говном?', 'с говном']:
         txt = "на колени!!!"
+    if txt.lower() in ['че смотришь', 'чё смотришь']:
+        txt = "хочу и смотрю!!!"
+    if txt.lower() in ['ты кому', 'ты кому?']:
+        txt = "тебе!!!"
     update.message.reply_text(txt)
 
 def start(update, conext):
